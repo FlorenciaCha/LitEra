@@ -1,0 +1,93 @@
+:root{
+    --color1:  #546BB9;
+    --color2:  #8194d5;
+    --color3:  #abbfe2;
+    --color4:  #fbd8bf;
+    --color5:  #fdb9b1; 
+    --color6:  #f2f2f2;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color6);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color1);
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#zona-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Zona de las obras (portadas) */
+#zona-obras {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px; 
+}
+
+.obra {
+    width: 170px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease;
+    cursor: grab;
+}
+
+.obra:active {
+    cursor: grabbing;
+}
+
+.obra:hover {
+    transform: scale(1.05);
+}
+
+/* Zona de los recuadros de clasificación */
+#zonas-generos {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.zona-genero {
+    width: 170px;
+    height: 240px;
+    background-color: #e9fff1;
+    border: 2px dashed var(--color1);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    color: var(--color1);
+    font-size: 18px;
+}
+
+
+#btn-siguiente {
+    position: fixed;
+    bottom: 40px;
+    right: 40px; 
+    background-color: var(--color1);
+    color: var(--color6);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-siguiente:hover {
+    background-color: var(--color2);
+}

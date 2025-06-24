@@ -1,0 +1,476 @@
+:root{
+    --color1:  #546BB9;
+    --color2:  #8194d5;
+    --color3:  #abbfe2;
+    --color4:  #fbd8bf;
+    --color5:  #fdb9b1; 
+    --color6:  #f2f2f2;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo img{
+    height: 50px;
+}
+
+#menu ol{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: var(--color6);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#menu a:hover{
+    color: var(--color3);
+    transition: color 0.3s ease;
+}
+
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    transition: 0.4s;
+    color: var(--color6);
+}
+
+
+.mostrar-menu{
+    order: 1;
+}
+
+
+#check{
+    display: none;
+}
+
+
+#banner{
+    /*background-image: url("../recursos_multimedia/banner-inicio.png");*/
+    /*width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color1);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 4rem; /* o más si lo necesitás */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: var(--color1);
+    animation: banner 20s infinite;
+}
+
+.contenido-banner{
+    position: relative;
+    color: var(--color6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido-banner h1{
+    padding: 10px 0px;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: var(--color1);
+    font-family: 'Dancing Script', cursive;
+}
+
+.texto-animado{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecerYDesaparecer 20s infinite ease-out;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+
+/*
+@keyframes aparecerTexto {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}*/
+
+@keyframes aparecerYDesaparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  5% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  21% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes banner {
+    0%, 20%{
+      background-image: url('../recursos_multimedia/banner-inicio.png');
+    }
+  
+    25%, 45%{
+      background-image: url('../recursos_multimedia/banner-lirico.png');
+    }
+    50%, 70%{
+      background-image: url('../recursos_multimedia/banner-narrativo.png');
+    }
+    75%, 100%{
+      background-image: url('../recursos_multimedia/banner-dramatico.png');
+    }
+}
+
+
+
+#boton-principal {
+  margin-top: 15px;
+  background-color: var(--color4);
+  box-shadow: -6px 6px 0px var(--color5);
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--color2);
+  border-radius: 35px;
+  padding: 8px 20px;
+  display: inline-block;
+  font-weight: bold;
+  transform: background-color 0.3s ease;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+#boton-principal:hover{
+    animation: pulse 0.5s infinite alternate;
+} 
+
+.presentacion{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color1);
+    color: var(--color6);
+    /*text-align: center;*/
+    padding: 40px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.texto-presentacion {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.texto-presentacion blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.texto-presentacion h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.texto-presentacion p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.imagen-presentacion {
+  flex: 1;
+  /*padding: 20px;*/
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-presentacion img {
+  /*max-width: 100%;
+  height: auto;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+/*
+#presentacion h2{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#presentacion p{
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#frase-celebre{
+    font-style: italic;
+    color: var(--color6);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.icono-presentacion{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+#imagen-literaria{
+    margin: 0;
+    padding: 0;
+}
+
+#imagen-literaria img{
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+*/
+
+#generos-literarios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: var(--color1); 
+    font-family: 'Dancing Script', cursive;
+}
+
+.tarjeta{
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    color: var(--color6);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.tarjeta img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+}
+
+.tarjeta h3 a{
+  font-size: 22px;
+  color: var(--color6);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.tarjeta h3 a:hover{
+  color: var(--color1);
+  transition: color 0.3s ease;
+}
+
+.narrativo{
+    background-color: var(--color5);
+}
+
+.lirico{
+    background-color: var(--color3);
+}
+
+.dramatico{
+    background-color: var(--color2);
+}
+
+.extra{
+    background-color: var(--color4);
+}
+
+
+.tarjeta:hover {
+  transform: scale(1.05); 
+}
+
+/*Para adaptar a celular*/
+@media (max-width: 768px) {
+  #generos-literarios {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#carrusel-obras{
+    text-align: center;
+    padding: 40px;
+}
+
+.carrusel-libros {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.libro {
+  width: 180px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.libro img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.libro img:hover {
+  transform: scale(1.05);
+}
+
+.libro p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--color1);
+}
+
+
+#pie{
+    background-color: var(--color3);
+    color: var(--color1);
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 14px;
+}
+
+.footer-creditos {
+  font-style: italic;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+
+#titulo-militera{
+  font-family: "Dancing Script", cursive; 
+}
+
+
+/*RESPONSIVE*/
+@media(max-width:768px){
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    .logo .logo-barra{
+        margin-left: 5px;
+    }
+    #menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--color1);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    #menu ol{
+        display: block;
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~#menu{
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+  .imagen-presentacion {
+    display: none;
+  }
+}
