@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style-generos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Mi LitEra</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html" class="logo-barra">
+                <img src="./recursos_multimedia/logo_LitEra.png" alt="">
+            </a>
+        </div>
+
+        <input type="checkbox" id="check"> 
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+
+        <nav id="menu">
+            <ol>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./miLitera.html">Mi LitEra</a></li>
+                <li><a href="./reproductor-video.html">Recursos</a></li>
+            </ol>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
+
+    <section class="banner" id="banner-militera">
+        <div class="contenedor-texto-banner">
+            <div class="titulo-tarjeta">
+                <h1 id="titulo-militera">Mis Libros Favoritos</h1>
+            </div>
+            <p>Aquí encontrarás las obras que agregaste a tu colección personal de LitEra.</p>
+        </div>
+    </section>
+
+
+     <section class="seccion-tarjetas">
+        <h2 class="subtitulo">Mi selección</h2>
+        <div id="zona-obras" class="tarjetas"></div>
+    </section>
+
+    <footer id="pie">
+        <p>&copy LitEra. Todos los derechos reservados.</p>
+        <p class="footer-creditos">Diseñado por Florencia Chavez</p>
+    </footer>
+
+
+    <script src="./js/script-miLitera.js"></script>
+</body>
+</html>

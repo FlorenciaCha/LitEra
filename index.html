@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>LitEra</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" class="logo-barra">
+                <img src="./recursos_multimedia/logo_LitEra.png" alt="">
+            </a>
+        </div>
+
+        <input type="checkbox" id="check"> 
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+
+        <nav id="menu">
+            <ol>
+                <li><a href="#generos-literarios">Géneros Literarios</a></li>
+                <li><a href="./actividad-drag-drop.html">Desafíos Literarios</a></li>
+                <li><a href="./miLitera.html">Mi LitEra</a></li>
+                <li><a href="./reproductor-video.html">Recursos</a></li>
+            </ol>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <div class="contenido-banner">
+            <div id="titulo">
+                <h1 class="texto-animado">Descubrí tu era literaria en LitEra</h1>
+                <a href="#generos-literarios" id="boton-principal">Explorar</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="presentacion"> 
+        
+        <div class="texto-presentacion">
+            <img src="./recursos_multimedia/pluma-dibujando-una-linea.png" alt="" class="icono-presentacion">
+                <blockquote id="frase-celebre"></blockquote>
+                <h2>Explorá lo que hay más allá de las palabras</h2>
+                <p>
+                    En LitEra, la literatura se transforma en una experiencia. Desde cuentos hasta desafíos, desde poesía hasta teatro, cada sección está pensada que la lectura cobre vida y se convierta parte de tu mundo.            
+                </p>
+        </div>
+
+        <div class="imagen-presentacion">
+            <img src="./recursos_multimedia/libros.jpg" alt="">
+        </div>
+       
+    </section>
+
+
+    <h2 class="subtitulo">La literatura en sus distintas formas</h2>
+    <section id="generos-literarios">
+        <div class="tarjeta narrativo">
+            <img src="./recursos_multimedia/libro.png" alt="">
+            <h3><a href="./narrativo.html">Narrativo</a></h3>
+            <p>Historias, personajes y mundos que cobran vida a través del relato</p>
+        </div>
+
+
+        <div class="tarjeta lirico">
+            <img src="./recursos_multimedia/poesia.png" alt="">
+            <h3><a href="./lirico.html">Lírico</a></h3>
+            <p>Emociones, imágenes y sentimientos expresados en forma poética</p>
+        </div>
+
+        <div class="tarjeta dramatico">
+            <img src="./recursos_multimedia/teatro.png" alt="">
+            <h3><a href="./dramatico.html">Dramático</a></h3>
+            <p>Situaciones representadas a través del diálogo y la acción escénica</p>
+        </div>
+
+        <div class="tarjeta extra">
+            <img src="./recursos_multimedia/procesamiento-de-textos.png" alt="">
+            <h3><a href="#">Y más</a></h3>
+            <p>Porque la literatura no tiene  límites, encontrá textos que informan, emocionan y despiertan nuevas ideas</p>
+        </div>
+    </section>
+
+    <section id="carrusel-obras">
+        <h2 class="subtitulo">Obras que te invintan a explorar mundos literarios</h2>
+        <div class="carrusel-libros">
+
+            <div class="libro">
+                <img src="./recursos_multimedia/cubierta-de-viaje-al-centro-de-la-tierra.jpg" alt="">
+            <p>Viaje al centro de la Tierra</p>
+            </div>
+            
+            <div class="libro">
+                <img src="./recursos_multimedia/tom.jpg" alt="">
+                <p>Tom Sawyer</p>
+            </div>
+            
+            <div class="libro">
+                <img src="./recursos_multimedia/historias-extraordnarias.jpg" alt="">
+                <p>Historias extraordinarias</p>
+            </div>
+
+            <div class="libro">
+                <img src="./recursos_multimedia/hobbit.jpg" alt="">
+                <p>El Hobbit</p>
+            </div>
+
+            <div class="libro">
+                <img src="./recursos_multimedia/iliada.jpg" alt="">
+                <p>La Iliada y la Odisea</p>
+            </div>
+
+            <div class="libro">
+                <img src="./recursos_multimedia/Romeo_y_Julieta-Shakespeare_William-lg.png" alt="">
+                <p>Romeo y Julieta</p>
+            </div>
+
+            <div class="libro">
+                <img src="./recursos_multimedia/zapatera.jpg" alt="">
+                <p>La Zapatera Prodigiosa</p>
+            </div>
+        </div>
+    </section>
+   
+    <footer id="pie">
+        <p>&copy LitEra. Todos los derechos reservados.</p>
+        <p class="footer-creditos">Diseñado por Florencia Chavez</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

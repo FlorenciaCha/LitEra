@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style-drag-drop.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Desafíos Literarios</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html" class="logo-barra">
+                <img src="./recursos_multimedia/logo_LitEra.png" alt="">
+            </a>
+        </div>
+
+        <input type="checkbox" id="check"> 
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+
+        <nav id="menu">
+            <ol>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./miLitera.html">Mi LitEra</a></li>
+                <li><a href="./reproductor-video.html">Recursos</a></li>
+            </ol>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
+
+    <h1>Clasifica las obras según su género literario</h1>
+
+    <div id="zona-juego">
+        <div id="zona-obras" class="contenedor-obras"></div>
+
+        <div id="zonas-generos">
+            <div class="zona-genero" data-genero="Narrativo">Narrativo</div>
+            <div class="zona-genero" data-genero="Dramático">Dramático</div>
+            <div class="zona-genero" data-genero="Lírico">Lírico</div>
+        </div>
+    </div>
+
+    <button id="btn-siguiente">
+        <span class="material-symbols-outlined">navigate_next</span>
+    </button>
+    <script src="./js/script-drag-drop.js"></script>
+</body>
+</html>

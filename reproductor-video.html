@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style-reproductor-video.css" />
+        <link rel="stylesheet" href="./css/styles.css">
+        <script type="text/javascript" src="./js/script-reproductor-video.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <title>Recursos Multimedia</title>
+    </head>
+    <body>
+        <header>
+        <div class="logo">
+            <a href="./index.html" class="logo-barra">
+                <img src="./recursos_multimedia/logo_LitEra.png" alt="">
+            </a>
+        </div>
+
+        <input type="checkbox" id="check"> 
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+
+
+        <nav id="menu">
+            <ol>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./actividad-drag-drop.html">Desafíos Literarios</a></li>
+                <li><a href="./miLitera.html">Mi LitEra</a></li>
+                <li><a href="./reproductor-video.html">Recursos</a></li>
+            </ol>
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>    
+    
+       <section id="reproductor">
+            <div class="contenedor-reproductor">
+                <div class="contenedor-video">
+                     <video id="medio" width="720" height="400">
+                        <source src="./recursos_multimedia/Casa Tomada-Julio-Cortazar-Narracion.mp4">
+                    </video>
+                </div>
+                <nav>
+                    <div id="botones">
+                        <button type="button" id="reproducir" class="boton">
+                            <span id="iconoPlay" class="material-symbols-outlined">play_circle</span>
+                        </button>
+                        <button type="button" id="detener" class="boton">
+                            <span class="material-symbols-outlined">stop_circle</span>
+                        </button>
+                        <button type="button" id="retroceder" class="boton" >
+                            <span class="material-symbols-outlined">replay_10</span>
+                        </button>
+                        <button type="button" id="adelantar" class="boton" >
+                            <span class="material-symbols-outlined">forward_10</span>
+                        </button>
+                   
+                        <button type="button" id="subirVolumen" class="boton" >
+                            <span class="material-symbols-outlined">volume_up</span>
+                        </button>
+                   
+                        <button type="button" id="bajarVolumen" class="boton" >
+                            <span class="material-symbols-outlined">volume_down</span>
+                        </button>
+                   
+                        <button type="button" id="mute" class="boton" >
+                            <span id="iconoMute" class="material-symbols-outlined">volume_mute</span>
+                        </button>
+                        <button  type="button" id="velocidad" class="boton" >
+                            <span id="iconoVelocidad" class="material-symbols-outlined">speed_2x</span>
+                        </button>
+                        <button type="button" id="cambiarTema" class="boton">
+                            <span id="iconoTema" class="material-symbols-outlined">light_mode</span>
+                        </button>
+                    </div>
+                    <div id="barra">
+                        <div id="progreso"></div>
+                    </div>
+                    <div style="clear: both"></div>  
+                </nav>
+            </div>
+       </section>
+    </body>
+</html>
