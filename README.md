@@ -21,7 +21,6 @@ Puedes visitar la página web aquí 👉 https://glittering-nougat-393ef6.netlif
 - Estilo minimalista con foco en el contenido literario
 - Uso de tipografías elegantes que acompañan la estética del sitio
 
-## 📁 Estructura del proyecto
 
 ## 👩‍💻 Autora
 
