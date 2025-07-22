@@ -26,6 +26,6 @@ Puedes visitar la página web aquí 👉 https://glittering-nougat-393ef6.netlif
 
 Florencia Chavez  
 Estudiante de Ingeniería en Informática | Universidad de Morón  
-Jefa de Trabajos Prácticos de Programación I  
+Jefe de Trabajos Prácticos de Programación I  
 Apasionada por la literatura, la tecnología y el diseño web.
 
